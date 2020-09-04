@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  background-color: #f98900;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.field-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-row {
+  display: flex;
+}
+
+.player-title {
+  font-size: 70px
+}
+
+.figure {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  font-size: 80px;
+}
