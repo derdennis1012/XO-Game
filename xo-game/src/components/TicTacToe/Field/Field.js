@@ -7,7 +7,7 @@ const Field = (props) => {
         <div className="board">
             {props.fields.map((field, fKey) => (
 
-                <Figure value={field} key={fKey} />
+                <Figure value={field} key={fKey} onClick={props.onClick} index={fKey} figures={props.figures} />
 
             ))}
         </div>
