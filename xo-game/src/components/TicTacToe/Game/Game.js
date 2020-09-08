@@ -91,7 +91,7 @@ const Game = (props) => {
                     <label className="player-ip">Player O</label>
                     <input className="player-ip" onChange={(e) => props.onChangeInputPlayer(e.target.value, 1)} /></div>
 
-                <div class="btn mt" onClick={nextGameStep}>StartGame</div></div>}
+                <div className="btn mt" onClick={nextGameStep}>StartGame</div></div>}
         {props.gameState === 1 &&
             <div className="field-outer">
                 <span className="player-title">{props.players[0]} ({props.score[0].score}) vs. {props.players[1]} ({props.score[1].score})</span>
@@ -101,7 +101,7 @@ const Game = (props) => {
         {props.gameState === 2 &&
             <div>
                 {props.winner === null && <div><h1>Nobody wons! Try again!</h1></div>}
-                {props.winner !== null && <div><h1>The winner is: {props.playerFigures[props.winner]} It's you {props.players[props.winner]}</h1></div>}<div class="btn mt" onClick={nextGameStep}>Replay</div></div>}
+                {props.winner !== null && <div><h1>The winner is: {props.playerFigures[props.winner]} It's you {props.players[props.winner]}</h1></div>}<div className="btn mt" onClick={nextGameStep}>Replay</div></div>}
 
     </div>)
 }
