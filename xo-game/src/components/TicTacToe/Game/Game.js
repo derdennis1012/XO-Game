@@ -10,9 +10,7 @@ const Game = (props) => {
         checkForWinner()
         return i;
     }
-    const fieldClicked = (index) => {
-        checkForWinner()
-    }
+
     const nextGameStep = () => {
         switch (props.gameState) {
             case 0:
@@ -83,7 +81,7 @@ const Game = (props) => {
     return (<div>
         {props.gameState === 0 &&
             <div>
-                <h1>Please Enter Your Names to start</h1>
+                <h1>Please enter your to start</h1>
                 <div>
                     <label className="player-ip">Player X</label>
                     <input className="player-ip" onChange={(e) => props.onChangeInputPlayer(e.target.value, 0)} /></div>
